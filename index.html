@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutorial 9 Prep</title>
+  <link rel="stylesheet" href="tut9.css">
+</head>
+<body>
+
+  <h2>Camera and Image Upload</h2>
+  <div>
+    <h1>Camera and Image Upload</h1>
+    <button id="take-picture">Open Camera</button>
+    <form id="upload-form" enctype="multipart/form-data">
+      <input type="file" id="upload-picture" accept="image/*">
+      <button type="button" id="upload-button">Upload Image</button>
+    </form>
+    <div id="preview"></div>
+    <script src="camera.js"></script>
+  </div>
+
+  <h2>Canvas</h2>
+  <div>
+    <canvas id="signatureCanvas" width="400" height="200"></canvas>
+        <div>
+            <button id="clearBtn">Clear</button>
+            <button id="saveBtn">Save</button>
+        </div>
+        <script src="canvasscript.js"></script>
+  </div>
+
+  <h2>GeoLocation</h2>
+  <div>
+    <button id="getLocationBtn">Get Location</button>
+        <p id="location"></p>
+
+        <script src = "locationscript.js"></script>
+  </div>
+
+  <h2>Payment</h2>
+  <div></div>
+
+  <h2>Video/Audio</h2>
+  <div></div>
+  
+</body>
+</html>
