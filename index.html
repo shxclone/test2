@@ -42,11 +42,21 @@
   <br><br>
   <div>
     <h3>Audio</h3>
+    <br>
+    <p>http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3</p>
+    <br>
+    <p>This takes in url for audio. but the default audio is from your folder</p>
     <div>
-        <audio controls>
+        <audio id="audioPlayer" controls>
             <source src="1-first-snowfall.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <form id ="audioForm">
+            <label for="audioURL">Enter audio URL:</label>
+            <input type="url" id="audioURL" name="audioURL" required>
+            <input type="submit" value="Load Audio">
+        </form>
+        <script src="audio.js"></script>
     </div>
     <br>
     <h3>Video</h3>
