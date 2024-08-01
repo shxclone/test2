@@ -30,17 +30,44 @@
 
   <h2>GeoLocation</h2>
   <div>
-    <button id="getLocationBtn">Get Location</button>
-        <p id="location"></p>
-
-        <script src = "locationscript.js"></script>
+    <p id="location">Waiting for location...</p>
+    <button id="refreshLocationBtn">Refresh Location</button>
+    <script src = "locationscript.js"></script>
   </div>
 
   <h2>Payment</h2>
   <div></div>
 
   <h2>Video/Audio</h2>
-  <div></div>
+  <br><br>
+  <div>
+    <h3>Audio</h3>
+    <div>
+        <audio controls>
+            <source src="1-first-snowfall.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br>
+    <h3>Video</h3>
+    <p>https://www.w3schools.com/html/mov_bbb.mp4</p>
+    <br>
+    <p>http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4</p>
+    <br>
+    <p>http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4</p>
+    <div>
+        <video id="videoPlayer" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <form id="videoForm">
+            <label for="videoURL">Enter video URL:</label>
+            <input type="url" id="videoURL" name="videoURL" required>
+            <input type="submit" value="Load Video">
+        </form>
+        <script src="video.js"></script>
+    </div>
+</div>
   
 </body>
 </html>
