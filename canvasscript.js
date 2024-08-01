@@ -1,4 +1,4 @@
-//const canvas = document.getElementById('signatureCanvas');
+const canvas = document.getElementById('signatureCanvas');
 const ctx = canvas.getContext('2d');
 let painting = false;
 
